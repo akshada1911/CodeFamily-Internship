@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header
+{
+    height: 100vh;
+}
+.navbar-style
+{
+    box-shadow: 0 5px 10px #efefef;
+}
+.logo
+{
+    height: 60px;
+    padding: 2px 10px;
+}
+.icon-bar {
+    background: darkorange;
+}
+a.btn{
+    margin:  30px 10px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 20px;
+}
+a.btn-first {
+    background-color: darkblue;
+    color: #fff;
+}
+a.btn-second {
+    background-color: transparent;
+    border: 1px solid blue;
+    color: #333;
+}
+a.btn:hover{
+    background: darkblue;
+    border: none;
+    color: #fff;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.maindiv {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1800px;
+    transition-property: opacity, transform, -webkit-transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    opacity: 1;
+    transform: translate(0);
+    z-index: 1;
+    display: block;
+    max-height: 80%;
+    overflow: hidden;
+    position: relative;
+    width: 320px;
+    height: 245px;
+    position: relative;
+    left: 0%;
+    right: 50%;
+    background-image: url(img1.jpg);
+    box-shadow: 1px 2px 10px 10px rgb(206, 189, 189);
+    animation: slider 9s infinite linear;
+}
+
+@keyframes slider {
+    0% {
+        background-image: url(img1.jpg);
+    }
+    35% {
+        background-image: url(img2.jpg);
+    }
+    75% {
+        background-image: url(img3.jpg);
+    }
+}
+.Contact {
+    font-family: "Work Sans", arial, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5;
+    color: rgb(67, 42, 211);
+    background-color: #4197dd;
+    border-color: #1653af;
+    margin-bottom: 1rem!important;
+    box-shadow: none!important;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: .1em;
+    transition: .3s all ease;
+    cursor: pointer;
+}
